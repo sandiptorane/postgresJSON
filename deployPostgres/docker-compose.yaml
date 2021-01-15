@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_USER: "perennial"
+      POSTGRES_PASSWORD: "perennial"
+      POSTGRES_DB: "supermart"
+    ports:
+    - 5432:5432
